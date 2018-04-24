@@ -61,7 +61,7 @@ android {
 
     !exists($$ANDROID_PACKAGE_SOURCE_DIR/src/org/dreamdev/QtAdMob)
     {
-        copydata.commands += $(COPY_DIR) $$shell_path($$PWD/platform/android/src) $$shell_path($$ANDROID_PACKAGE_SOURCE_DIR)
+        copydata.commands += $(COPY_DIR) $$shell_path($$PWD/platform/android/src) $$shell_path($$ANDROID_PACKAGE_SOURCE_DIR/src)
     }
 
     first.depends = $(first) copydata
